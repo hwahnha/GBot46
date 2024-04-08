@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# 패키지 목록 업데이트
+echo "패키지 목록 업데이트 중..."
+sudo apt-get update
+
+# Python3 설치
+echo "Python3 설치 중..."
+sudo apt-get install -y python3
+
+# Python3 버전 확인
+echo "Python3 버전:"
+python3 --version
+
+# pip3 설치
+echo "pip3 설치 중..."
+sudo apt-get install -y python3-pip
+
+# pip 버전 확인
+echo "pip 버전:"
+pip3 --version
+
+# Python3 가상 환경 패키지 설치
+echo "Python3 가상 환경 패키지 설치 중..."
+sudo apt-get install -y python3-venv
+
+echo "Python3 설치 완료"
